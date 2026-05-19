@@ -204,6 +204,12 @@ function escapeHTML(str) {
     .replace(/"/g, '&quot;');
 }
 
+// ===== EXPOSE GLOBALS =====
+window.openNoteDialog = openNoteDialog;
+window.closeNoteDialog = closeNoteDialog;
+window.editNote = editNote;
+window.deleteNote = deleteNote;
+
 // ===== INIT =====
 initTheme();
 renderNotes();

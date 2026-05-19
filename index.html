@@ -15,6 +15,57 @@
         <button class="add-note-btn" onclick="openNoteDialog()">+ Add Note</button>
         <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
     </div>
+
+    <div class="header-tools">
+
+    <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="🔍 Search notes..."
+    >
+
+    <button id="exportBtn" class="theme-toggle-btn">
+        📤
+    </button>
+
+    <label class="theme-toggle-btn">
+
+        📥
+        <input
+            type="file"
+            id="importInput"
+            accept=".json"
+            hidden
+        >
+
+    </label>
+
+    <button
+        id="voiceBtn"
+        class="theme-toggle-btn">
+
+        🎤
+
+    </button>
+
+    <button
+        class="add-note-btn"
+        onclick="openNoteDialog()">
+
+        + Add Note
+
+    </button>
+
+    <button
+        id="themeToggleBtn"
+        class="theme-toggle-btn">
+
+        🌙
+
+    </button>
+
+</div>
 </header>
 
 <main id="notesContainer" class="notes-grid"></main>
